@@ -1,18 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
 
 public class ConstructorPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //estos son los atributos o las porpiedades
+    
+    
+        public string nombre;
+        public int playerId;
+        public float vida;
+        private int daño;
+        public float velocidad;
+        private Transform posicionActual;
+        private Transform transformacion;
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //esto son los metodos y los comportamientos del jugador
+
+   public ConstructorPlayer(int id, string n, float vida, float vel)
+   {
+       this.playerId = id;
+       this.nombre = n;
+       this.vida = vida;
+       this.velocidad = vel;
+   }
 }

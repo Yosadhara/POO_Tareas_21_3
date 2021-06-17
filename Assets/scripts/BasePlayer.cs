@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class BaseJugador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ConstructorPlayer[] nuevoJugador;
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        nuevoJugador = new ConstructorPlayer[1];
+
+        nuevoJugador[0] = new ConstructorPlayer(1, "Panda", 15,3);
     }
 }
