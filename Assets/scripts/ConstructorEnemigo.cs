@@ -5,7 +5,7 @@ using UnityEngine;
 public class ConstructorEnemigo : MonoBehaviour
 {
      public string nombre;
-        public int playerId;
+        public int enemigoId;
         public float vida;
         private int daño;
         public float velocidad;
@@ -13,7 +13,7 @@ public class ConstructorEnemigo : MonoBehaviour
        
      public ConstructorEnemigo(int id, string n, float vida, float vel)
    {
-       this.playerId = id;
+       this.enemigoId = id;
        this.nombre = n;
        this.vida = vida;
        this.velocidad = vel;

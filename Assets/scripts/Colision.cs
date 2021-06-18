@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Colision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public float daño;
+
+    private void OncollisionEnter (Collision other)
+
+    //Iniciacion del daño al enemigo
+    if (other.gameObject.tag == "Player")
     {
-        
+        other.gameObject.GetComponent<DanoPlayer>().damage(daño);
     }
 }

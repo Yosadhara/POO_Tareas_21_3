@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class DanoPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    Player playerData;
+ 
+    // Start is called before the first frame update
+    
 }
